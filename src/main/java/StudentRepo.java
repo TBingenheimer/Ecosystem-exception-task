@@ -13,7 +13,8 @@ public class StudentRepo {
         return student;
     }
 
-    public Optional<Student> findStudentById(String id) {
-        return Optional.ofNullable(students.get(id));
+    public Student findStudentById(String id) {
+        return students.get(id);
     }
+
 }
